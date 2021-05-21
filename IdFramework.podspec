@@ -29,10 +29,12 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'Classes/**/*.swift'
-  
+  s.source_files = 'IdFramework/**/*.swift'
+
   s.swift_version = '4.2'
-  
+
+  s.dependency 'Firebase'
+
   s.platforms = {
         "ios": "12.0"
   }

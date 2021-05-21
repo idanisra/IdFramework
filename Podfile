@@ -6,5 +6,6 @@ target 'IdFramework' do
   use_frameworks!
 
   # Pods for IdFramework
+  pod 'Firebase' 
 
 end
