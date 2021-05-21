@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		27EC64032656E5B5003CCF5D /* IdFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 27EC64012656E5B5003CCF5D /* IdFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27EC640C2656E5FC003CCF5D /* FirebaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EC640B2656E5FC003CCF5D /* FirebaseConfig.swift */; };
+		27EC640C2656E5FC003CCF5D /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EC640B2656E5FC003CCF5D /* TestClass.swift */; };
+		27EC643C2657B0BC003CCF5D /* FirebaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EC643B2657B0BC003CCF5D /* FirebaseConfig.swift */; };
+		27EC64442657E45F003CCF5D /* IdFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 27EC643F2657E45F003CCF5D /* IdFramework.podspec */; };
+		27EC64452657E45F003CCF5D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 27EC64402657E45F003CCF5D /* README.md */; };
+		27EC64462657E45F003CCF5D /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 27EC64412657E45F003CCF5D /* Podfile.lock */; };
+		27EC64472657E45F003CCF5D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 27EC64422657E45F003CCF5D /* Podfile */; };
+		27EC64482657E45F003CCF5D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 27EC64432657E45F003CCF5D /* LICENSE */; };
 		4919A031F53A00D00F602991 /* Pods_IdFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A07459E9CB627B9B62AAACA /* Pods_IdFramework.framework */; };
 /* End PBXBuildFile section */
 
@@ -17,7 +23,13 @@
 		27EC63FE2656E5B5003CCF5D /* IdFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27EC64012656E5B5003CCF5D /* IdFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdFramework.h; sourceTree = "<group>"; };
 		27EC64022656E5B5003CCF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27EC640B2656E5FC003CCF5D /* FirebaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConfig.swift; sourceTree = "<group>"; };
+		27EC640B2656E5FC003CCF5D /* TestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
+		27EC643B2657B0BC003CCF5D /* FirebaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConfig.swift; sourceTree = "<group>"; };
+		27EC643F2657E45F003CCF5D /* IdFramework.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = IdFramework.podspec; sourceTree = SOURCE_ROOT; };
+		27EC64402657E45F003CCF5D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		27EC64412657E45F003CCF5D /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = file; path = Podfile.lock; sourceTree = SOURCE_ROOT; };
+		27EC64422657E45F003CCF5D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		27EC64432657E45F003CCF5D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		377D5DF73DA10F64B6A35EDB /* Pods-IdFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdFramework.release.xcconfig"; path = "Target Support Files/Pods-IdFramework/Pods-IdFramework.release.xcconfig"; sourceTree = "<group>"; };
 		3A07459E9CB627B9B62AAACA /* Pods_IdFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -46,6 +58,7 @@
 		27EC63F42656E5B5003CCF5D = {
 			isa = PBXGroup;
 			children = (
+				27EC643E2657E43B003CCF5D /* Aux */,
 				27EC64002656E5B5003CCF5D /* IdFramework */,
 				27EC63FF2656E5B5003CCF5D /* Products */,
 				1466ABB1CE77AC88C675C04E /* Pods */,
@@ -82,9 +95,22 @@
 		27EC640E2656E651003CCF5D /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				27EC640B2656E5FC003CCF5D /* FirebaseConfig.swift */,
+				27EC640B2656E5FC003CCF5D /* TestClass.swift */,
+				27EC643B2657B0BC003CCF5D /* FirebaseConfig.swift */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		27EC643E2657E43B003CCF5D /* Aux */ = {
+			isa = PBXGroup;
+			children = (
+				27EC643F2657E45F003CCF5D /* IdFramework.podspec */,
+				27EC64432657E45F003CCF5D /* LICENSE */,
+				27EC64422657E45F003CCF5D /* Podfile */,
+				27EC64412657E45F003CCF5D /* Podfile.lock */,
+				27EC64402657E45F003CCF5D /* README.md */,
+			);
+			path = Aux;
 			sourceTree = "<group>";
 		};
 		69C892BED71F6ADF1FD0FAB7 /* Frameworks */ = {
@@ -165,6 +191,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27EC64462657E45F003CCF5D /* Podfile.lock in Resources */,
+				27EC64452657E45F003CCF5D /* README.md in Resources */,
+				27EC64472657E45F003CCF5D /* Podfile in Resources */,
+				27EC64442657E45F003CCF5D /* IdFramework.podspec in Resources */,
+				27EC64482657E45F003CCF5D /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27EC640C2656E5FC003CCF5D /* FirebaseConfig.swift in Sources */,
+				27EC643C2657B0BC003CCF5D /* FirebaseConfig.swift in Sources */,
+				27EC640C2656E5FC003CCF5D /* TestClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
