@@ -2,14 +2,28 @@
 //  FirebaseConfig.swift
 //  IdFramework
 //
-//  Created by Idan Israel - Personal on 21/05/2021.
+//  Created by Idan Israel - Personal on 15/05/2021.
 //
 
 import Foundation
-import Firebase
+import FirebaseCore
 
 public class FirebaseConfig {
-    public static func printTest() {
-        print("Hello")
+    public static func setupFirebase() {
+        let arguments = ProcessInfo.processInfo.arguments as [String]
+        var plistFileName = "GoogleService-Info-"
+
+        if let environment = arguments.first?.split(separator: " ").last {
+            plistFileName += environment
+            
+            guard let plistPath = Bundle.main.path(forResource: plistFileName, ofType: "plist"), let options =  FirebaseOptions(contentsOfFile: plistPath) else {
+                return
+            }
+            
+            if FirebaseApp.app() == nil{
+                FirebaseApp.configure(options: options)
+            }
+        }
     }
 }
+
