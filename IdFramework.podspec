@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'IdFramework'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'This is Idans Framework.'
 
   s.description      = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.swift_version = '4.2'
   s.static_framework = true
   s.ios.framework  = 'UIKit'
-  s.dependency 'Firebase'
+  s.dependency 'FirebaseCore'
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Fibrease/**' }
   s.source_files = 'IdFramework/Classes/**/*.swift'
 
