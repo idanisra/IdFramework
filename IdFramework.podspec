@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'IdFramework'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'This is Idans Framework.'
 
   s.description      = 'This project contains a framework with usefull functionality'
