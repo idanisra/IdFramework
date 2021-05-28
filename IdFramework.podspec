@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.ios.framework  = 'UIKit'
   s.dependency 'FirebaseCore'
+  s.dependency 'FirebaseAuth'
+  s.dependency 'FirebaseStorage'
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Fibrease/**' }
   s.source_files = 'IdFramework/Classes/**/*.swift'
 

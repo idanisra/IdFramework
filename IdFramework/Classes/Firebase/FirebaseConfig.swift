@@ -9,6 +9,8 @@ import Foundation
 import FirebaseCore
 
 public class FirebaseConfig {
+    /// MARK: - Functions
+    
     public static func setupFirebase() {
         let arguments = ProcessInfo.processInfo.arguments as [String]
         var plistFileName = "GoogleService-Info-"
