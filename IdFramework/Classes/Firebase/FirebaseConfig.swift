@@ -8,6 +8,8 @@
 import Foundation
 import FirebaseCore
 
+/// MARK: - FirebaseConfig
+
 public class FirebaseConfig {
     /// MARK: - Functions
     

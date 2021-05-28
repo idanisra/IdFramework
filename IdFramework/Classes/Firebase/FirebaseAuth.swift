@@ -8,14 +8,16 @@
 import FirebaseAuth
 import Foundation
 
-class FirebaseAuth {
+/// MARK: - FirebaseAuth
+
+public class FirebaseAuth {
     /// MARK: - Variables
     
-    static var userId: String = ""
+    public static var userId: String = ""
     
     /// MARK: - Functions
     
-    static func login(email: String?, password: String?, completion: @escaping (_ _success:Bool) -> Void) {
+    public static func login(email: String?, password: String?, completion: @escaping (_ _success:Bool) -> Void) {
         if Auth.auth().currentUser != nil {
             logout()
         }
@@ -32,11 +34,11 @@ class FirebaseAuth {
         }
     }
     
-    static func logout() {
+    public static func logout() {
         try! Auth.auth().signOut()
     }
     
-    static func registerUser(email: String, password: String, completion: @escaping (_ _success:Bool) -> Void) {
+    public static func registerUser(email: String, password: String, completion: @escaping (_ _success:Bool) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
             if let _ = error {
                 completion(false)

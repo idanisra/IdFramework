@@ -9,20 +9,22 @@ import Foundation
 import FirebaseAuth
 import FirebaseStorage
 
-class FirebaseStorage {
+/// MARK: - FirebaseStorage
+
+public class FirebaseStorage {
     /// MARK: - Variables
     
-    static var storage: Storage?
+    public static var storage: Storage?
     
     /// MARK: - Functions
     
-    static func initStorage() {
+    public static func initStorage() {
         if self.storage == nil {
             self.storage = Storage.storage()
         }
     }
     
-    static func getUrl(filePath: String , completion: @escaping (_ success: Bool, _ url: URL?) -> Void) {
+    public static func getUrl(filePath: String , completion: @escaping (_ success: Bool, _ url: URL?) -> Void) {
         if let storage = self.storage {
             let storageRef = storage.reference(withPath: filePath)
             
@@ -38,7 +40,7 @@ class FirebaseStorage {
         }
     }
     
-    static func delete(fileToDelete: String) {
+    public static func delete(fileToDelete: String) {
         if let storage = self.storage {
             let storageRef = storage.reference().child(fileToDelete)
             
@@ -50,7 +52,7 @@ class FirebaseStorage {
         }
     }
     
-    static func upload(fileData: Data, targetPath: String, completion: @escaping (_ _success:Bool) -> Void) {
+    public static func upload(fileData: Data, targetPath: String, completion: @escaping (_ _success:Bool) -> Void) {
         if let storage = self.storage {
             let storageRef = storage.reference().child(targetPath)
     

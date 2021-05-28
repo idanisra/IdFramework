@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LargeHeader" customModule="אטליז_של_פעם" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="mGR-7e-tQg"/>
+                <outlet property="headerHeightView" destination="dyd-MX-1kh" id="bS3-pF-rnR"/>
+                <outlet property="headerView" destination="plu-En-Dks" id="KFA-4w-efG"/>
+                <outlet property="leftButton" destination="8rK-eh-whT" id="UP5-oH-5GD"/>
+                <outlet property="leftLabelButton" destination="hUW-ga-7JA" id="kSQ-Kd-3t5"/>
+                <outlet property="navigationBarHorizontalConstraint" destination="DDM-3M-dvb" id="XsG-Bq-gqF"/>
+                <outlet property="navigationButtonTopConstraint" destination="K4m-g0-hjR" id="Kr5-Ri-d7P"/>
+                <outlet property="rightButton" destination="rKX-Vk-qUP" id="mgy-CZ-sLI"/>
+                <outlet property="rightLabelButton" destination="Afg-Dg-gr3" id="dH5-hd-Myl"/>
+                <outlet property="title" destination="mgz-rQ-On1" id="HCs-0V-CWF"/>
+                <outlet property="titleBottomConstraint" destination="gd4-sw-19W" id="X8P-6l-GgF"/>
+                <outlet property="titleTralingConstraint" destination="hNR-5n-zhG" id="eJX-fE-pYD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" interfaceStyle="light" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="plu-En-Dks" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                    <subviews>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKX-Vk-qUP" userLabel="Right Button">
+                            <rect key="frame" x="384" y="40" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="5gF-WA-Qw7"/>
+                                <constraint firstAttribute="width" constant="20" id="ci9-V6-1pT"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="Back"/>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="Gos-dy-kuu"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rK-eh-whT" userLabel="Left Button">
+                            <rect key="frame" x="10" y="40" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="c8m-VZ-jFe"/>
+                                <constraint firstAttribute="width" constant="20" id="hcy-ac-2dB"/>
+                            </constraints>
+                            <state key="normal" image="Forward"/>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="Lkj-Em-Zmg"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="עגלה" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgz-rQ-On1" userLabel="Title">
+                            <rect key="frame" x="334" y="88" width="70" height="42"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afg-Dg-gr3" userLabel="Right Label Button">
+                            <rect key="frame" x="319" y="40" width="60" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="aGa-Zq-04i"/>
+                                <constraint firstAttribute="height" constant="20" id="eFO-If-Cho"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="0FD-rc-Rg0"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUW-ga-7JA" userLabel="Left Label Button">
+                            <rect key="frame" x="35" y="40" width="60" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="Pmb-zl-Omg"/>
+                                <constraint firstAttribute="height" constant="20" id="bxc-hM-JKc"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="1SL-ow-aha"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="rKX-Vk-qUP" firstAttribute="leading" secondItem="Afg-Dg-gr3" secondAttribute="trailing" constant="5" id="0cb-f8-64z"/>
+                        <constraint firstItem="rKX-Vk-qUP" firstAttribute="top" secondItem="plu-En-Dks" secondAttribute="top" constant="40" id="3Bb-LO-WBA"/>
+                        <constraint firstItem="hUW-ga-7JA" firstAttribute="leading" secondItem="8rK-eh-whT" secondAttribute="trailing" constant="5" id="5mx-UB-xXw"/>
+                        <constraint firstItem="8rK-eh-whT" firstAttribute="leading" secondItem="plu-En-Dks" secondAttribute="leading" constant="10" id="DDM-3M-dvb"/>
+                        <constraint firstItem="hUW-ga-7JA" firstAttribute="top" secondItem="plu-En-Dks" secondAttribute="top" constant="40" id="K4m-g0-hjR"/>
+                        <constraint firstAttribute="trailing" secondItem="rKX-Vk-qUP" secondAttribute="trailing" constant="10" id="Kbm-3D-kOA"/>
+                        <constraint firstAttribute="height" constant="140" id="dyd-MX-1kh"/>
+                        <constraint firstAttribute="bottom" secondItem="mgz-rQ-On1" secondAttribute="bottom" constant="10" id="gd4-sw-19W"/>
+                        <constraint firstAttribute="trailing" secondItem="mgz-rQ-On1" secondAttribute="trailing" constant="10" id="hNR-5n-zhG"/>
+                        <constraint firstItem="8rK-eh-whT" firstAttribute="top" secondItem="plu-En-Dks" secondAttribute="top" constant="40" id="hnc-x0-eJ9"/>
+                        <constraint firstItem="Afg-Dg-gr3" firstAttribute="top" secondItem="plu-En-Dks" secondAttribute="top" constant="40" id="lYj-na-FoX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="plu-En-Dks" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CST-yu-7VP"/>
+                <constraint firstItem="plu-En-Dks" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="P83-bW-m6n"/>
+                <constraint firstItem="plu-En-Dks" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mEL-MH-W48"/>
+                <constraint firstItem="plu-En-Dks" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="wqc-OL-IgD"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="81.159420289855078" y="-101.78571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back" width="256" height="256"/>
+        <image name="Forward" width="256" height="256"/>
+    </resources>
+</document>
