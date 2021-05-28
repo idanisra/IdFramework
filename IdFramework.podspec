@@ -1,11 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = 'IdFramework'
-  s.version          = '0.4.0'
+  s.version          = '1.0.0'
   s.summary          = 'This is Idans Framework.'
 
-  s.description      = <<-DESC
-  'This project contains a framework with usefull functionality'
-                       DESC
+  s.description      = 'This project contains a framework with usefull functionality'
 
   s.homepage         = 'https://github.com/idanisra/IdFramework'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
