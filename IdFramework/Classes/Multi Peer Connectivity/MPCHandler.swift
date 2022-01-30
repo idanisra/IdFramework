@@ -12,10 +12,11 @@
 import Foundation
 import MultipeerConnectivity
 
-/// MARK: - MPCHandler
+// MARK: - MPCHandler
 
 public class MPCHandler: NSObject {
-    /// MARK: - Variables
+    
+    // MARK: - Variables
     
     public var peerID: MCPeerID?
     public var session: MCSession?
@@ -25,7 +26,7 @@ public class MPCHandler: NSObject {
     public var delegate: MPCProtocol?
     public var invitationHandler: ((Bool, MCSession?)->Void)?
     
-    /// MARK: - Public Functions
+    // MARK: - Public Functions
     
     public func setupPeerID () {
         self.peerID = MCPeerID(displayName: UIDevice.current.name)
